@@ -12,7 +12,6 @@ Este parche utiliza mecanismos nativos de administración de macOS para aplicar 
 2. **LaunchAgent de Usuario:** Mantiene la variable `ELECTRON_EXTRA_LAUNCH_ARGS` activa en la sesión para aplicaciones como Visual Studio Code, Discord, Slack y Spotify.
 
 ### Flags Aplicados:
-
 * `--use-gl=angle`
 * `--use-angle=gl`
 * `--disable-features=SkiaGraphite,SkiaGraphiteDawn`
@@ -39,8 +38,7 @@ launchctl getenv ELECTRON_EXTRA_LAUNCH_ARGS
 ```
 
 **Resultado esperado:**
-
-```
+```text
 --use-gl=angle --use-angle=gl --disable-features=SkiaGraphite,SkiaGraphiteDawn --disable-gpu-sandbox
 ```
 
@@ -76,19 +74,4 @@ defaults delete com.operasoftware.Opera ChromiumSwitches 2>/dev/null
 
 ## 📄 Licencia
 
-Distribuido bajo la Licencia **MIT**.launchctl unload -w "$HOME/Library/LaunchAgents/com.ryzentosh.electronfix.plist" 2>/dev/null
-rm -f "$HOME/Library/LaunchAgents/com.ryzentosh.electronfix.plist"
-launchctl unsetenv ELECTRON_EXTRA_LAUNCH_ARGS
-
-# 2. Limpiar políticas de navegadores
-defaults delete com.brave.Browser ChromiumSwitches 2>/dev/null
-defaults delete com.google.Chrome ChromiumSwitches 2>/dev/null
-defaults delete com.microsoft.edgemac ChromiumSwitches 2>/dev/null
-defaults delete company.thebrowser.Browser ChromiumSwitches 2>/dev/null
-defaults delete com.vivaldi.Vivaldi ChromiumSwitches 2>/dev/null
-defaults delete com.operasoftware.Opera ChromiumSwitches 2>/dev/null
-```
-
-## 📄 Licencia
-
-Distribuido bajo la Licencia MIT.
+Distribuido bajo la Licencia **MIT**.
