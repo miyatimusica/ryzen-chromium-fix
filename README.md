@@ -24,7 +24,7 @@ Este parche utiliza mecanismos nativos de administración de macOS para aplicar 
 Abre la **Terminal** y ejecuta:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/miyatimusica/ryzen-chromium-fix/main/ryzen-chromium-fix | zsh
+curl -fsSL https://raw.githubusercontent.com/miyatimusica/ryzen-chromium-fix/main/ryzen-chromium-fix.sh | zsh
 ```
 
 ---
