@@ -24,7 +24,7 @@ Este parche utiliza mecanismos nativos de administración de macOS para aplicar 
 Abre la **Terminal** y ejecuta:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/miyatimusica/ryzen-chromium-fix/main/install.sh | zsh
+curl -fsSL https://raw.githubusercontent.com/miyatimusica/ryzen-chromium-fix/main/ryzen-chromium-fix | zsh
 ```
 
 ---
@@ -37,10 +37,8 @@ Para comprobar que la política para Electron está cargada en el sistema:
 launchctl getenv ELECTRON_EXTRA_LAUNCH_ARGS
 ```
 
-**Resultado esperado:**
-```text
---use-gl=angle --use-angle=gl --disable-features=SkiaGraphite,SkiaGraphiteDawn --disable-gpu-sandbox
-```
+**Resultado esperado:**  
+`--use-gl=angle --use-angle=gl --disable-features=SkiaGraphite,SkiaGraphiteDawn --disable-gpu-sandbox`
 
 ---
 
