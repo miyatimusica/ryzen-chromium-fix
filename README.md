@@ -21,7 +21,7 @@ El proyecto se compone de dos herramientas independientes diseñadas para aborda
    - Aplica políticas Enterprise nativas (`defaults write`) para navegadores Chromium (`com.brave.Browser`, `com.google.Chrome`, etc.).
    - Registra un `LaunchAgent` permanente que mantiene activa la variable de entorno `ELECTRON_EXTRA_LAUNCH_ARGS` en la sesión del usuario de macOS.
 
-2. **Creador de Ryzentosh App Fixer (`Ryzentosh App Fixer.sh v2.1`):**
+2. **Creador de Ryzentosh App Fixer (`Ryzentosh App Fixer.sh`):**
    - Compila e instala la aplicación gráfica `Ryzentosh App Fixer.app` en tu carpeta `/Applications` y Launchpad.
    - Realiza un escaneo profundo en carpetas y subcarpetas para identificar aplicaciones Electron/Chromium rebeldes e insensibles a variables globales.
    - Reemplaza de forma segura el ejecutable por un *wrapper* de protección GPU dinámico (`basename "$0".orig`) y re-firma el paquete localmente con `codesign`.
