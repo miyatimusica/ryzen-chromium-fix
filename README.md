@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![GitHub release](https://img.shields.io/badge/Release-v2.0--PRO-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/miyatimusica/ryzen-dylib-fix/releases)
 
-*Solución nativa sin modificación invasiva de binarios ni inyección de librerías `.dylib` para corregir cierres imprevistos (*Kernel Panics*), parpadeos (*flickering*) e inestabilidad gráfica en aplicaciones basadas en Chromium y Electron ejecutadas en Ryzentosh (AMD Ryzen iGPU) con `NootEDred.kext`.*
+*Solución nativa sin modificación invasiva de binarios para corregir cierres imprevistos (*Kernel Panics*), parpadeos (*flickering*) e inestabilidad gráfica en aplicaciones basadas en Chromium y Electron ejecutadas en Ryzentosh (AMD Ryzen iGPU) con `NootEDred.kext`.*
 
 ---
 
